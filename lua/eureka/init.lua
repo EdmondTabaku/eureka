@@ -8,7 +8,8 @@ end
 
 local function show_notes()
     local default_notes = config.get_default_notes()
-    ui.display(default_notes)
+    local close_key = config.get_close_key()
+    ui.display(default_notes, close_key)
 end
 
 return {

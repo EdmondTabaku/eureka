@@ -2,8 +2,9 @@ local M = {}
 
 local default_config = {
     default_notes = {
-        {key = 'gg', cmd = 'Go to top of the file'},
-    }
+        "gg - Go to file start",
+    },
+    close_key = 'q',
 }
 
 local user_config = {}
@@ -14,6 +15,10 @@ end
 
 function M.get_default_notes()
     return user_config.default_notes
+end
+
+function M.get_close_key()
+    return user_config.close_key
 end
 
 return M
