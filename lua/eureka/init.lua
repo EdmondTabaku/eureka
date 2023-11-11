@@ -3,7 +3,6 @@ local ui = require("eureka.ui")
 
 local function setup(user_config)
     config.set(user_config)
-    vim.api.nvim_set_keymap("n", "<C-u>", ":lua require('eureka').show_notes()<CR>", { noremap = true, silent = true })
 end
 
 local function show_notes()
